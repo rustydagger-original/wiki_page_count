@@ -18,10 +18,12 @@ Simple application to compute the top 25 pages on Wikipedia for each of the Wiki
     
     In unix environment, we can create crontab job, and on Windows, we can use window scheduler to run on intervals
 
-    For example, in Unix, to run the program every hour for the day
+    For example, in Unix, to run the program every hour at 50min pass the hour for the day
     
-        '0 * * * * /directory/run_wiki_page'
+        '50 * * * * /directory/run_wiki_page'
 
+    As I experienced, the data file for the hour doesn't get uploaded to the wiki website until late in the hour, so I set the starting minute to 50
+    
 3. How would you test this application?
 
     Simple test case
