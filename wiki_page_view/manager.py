@@ -87,6 +87,6 @@ if __name__ == "__main__":
     arg_parser.add_argument('dates', help='date format is 2019-10-18:23 year-month-day:hour Date time is in GMT zone', nargs='*')
     args = arg_parser.parse_args()
     if not args.dates:
-        args.dates.append(time.strftime("%m/%d/%Y:%H", time.gmtime()))
+        args.dates.append(time.strftime("%Y-%m-%d:%H", time.gmtime()))
 
     main(args.dates)
