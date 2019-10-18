@@ -10,7 +10,7 @@ Simple application to compute the top 25 pages on Wikipedia for each of the Wiki
 
     config.yml contains setting specific to this program, user can change accordingly
     
-    For example, if running behind a firewall, and get request denied when downloading, user can do the following change
+    For example, if running behind a firewall, and get request denied when downloading, user can add the following to config.yml
     
         custom_proxy: {"http": [proxy url with port], "https": [proxy url with port]}
 
