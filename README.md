@@ -38,3 +38,5 @@ Simple application to compute the top 25 pages on Wikipedia for each of the Wiki
     ```
 
 4. How you’d improve on this application design?
+
+      I used Pandas to do the data analytics part, to aggregate the page view count. As future improvement, I can make a configuration schema file, to plug in different module (such as python native collection, sorting, etc, or other third party package). 
