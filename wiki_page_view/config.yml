@@ -1,0 +1,7 @@
+log_entry: "./logs/wiki_page_view.log"
+output_directory: "./output"
+black_list_url: "https://s3.amazonaws.com/dd-interview-data/data_engineer/wikipedia/blacklist_domains_and_pages"
+pageviews_url: "https://dumps.wikimedia.org/other/pageviews"
+custom_proxy: {"http": "http://devproxy.bloomberg.com:82", "https": "http://devproxy.bloomberg.com:82"}
+num_of_thread: 6
+
