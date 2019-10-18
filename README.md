@@ -26,7 +26,7 @@ Simple application to compute the top 25 pages on Wikipedia for each of the Wiki
     
 3. How would you test this application?
 
-    Simple test case
+    Simple test case, run in path ./wiki_page_view/
     ```
       python manager.py --help # Display usage info
       
