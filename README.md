@@ -1,6 +1,34 @@
 # wiki_page_count
 Simple application to compute the top 25 pages on Wikipedia for each of the Wikipedia sub-domains
 
+This project consists of the following compoents
+```
+      1     config.yml
+            
+            Contains various porject settings, such as 
+            
+            log_entry: "./logs/wiki_page_view.log"
+            output_directory: "./output"
+            black_list_url: "https://s3.amazonaws.com/dd-interview-data/data_engineer/wikipedia/blacklist_domains_and_pages"
+            pageviews_url: "https://dumps.wikimedia.org/other/pageviews"
+            custom_proxy: {}
+            num_of_thread: 6
+            
+      2     down_loader.py
+      
+            Responsible to make http request and download data, error handle on 404 data not found
+            
+      3     manager.py
+            
+            Main program to call to run the project. 
+            Includes multiprocessing when running on multiple data/hour sets
+      
+      4     wiki_page_view.py
+      
+            The engine for this project. Using Pandas to do data analytics, filtering and aggregation. 
+            Output results to local file
+```
+
 1. What additional things would you want to operate this application in a production setting?
 
       This project requires Python 2.7.16 or higher version to run, and it's been tested  with the following python version and enviroment
