@@ -27,6 +27,8 @@ Simple application to compute the top 25 pages on Wikipedia for each of the Wiki
     Simple test case
     ```
       python manager.py --help # Display usage info
+      
+      python manager.py # Run to get data for current date and hour, GMT time
     
       python manager.py 2019-10-17:12 # Run to get data for 2019-10-17 12PM GMT time
     
