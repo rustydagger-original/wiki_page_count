@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -f
+
+exec nice python -u ./wiki_page_view/manager.py "$@";
