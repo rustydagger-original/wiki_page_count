@@ -72,7 +72,7 @@ class WikiPageView(object):
                 zip_data,
                 sep=" ",
                 header=None,
-                names=["domain_code", "page_titnnnle", "view_count", "response_size"],
+                names=["domain_code", "page_title", "view_count", "response_size"],
                 index_col=[0, 1],
                 error_bad_lines=False,
                 encoding="utf-8",
