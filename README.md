@@ -22,8 +22,11 @@ This project consists of the following compoents
             
             Main program to call to run the project. 
             Includes multiprocessing when running on multiple data/hour sets
+            
+      4     run_wiki_page
+            Shell script to run manager.py. This shell script can be used with crontab commands for running in interval
       
-      4     wiki_page_view.py
+      5     wiki_page_view.py
       
             The engine for this project. Using Pandas to do data analytics, filtering and aggregation. 
             Output results to local file
